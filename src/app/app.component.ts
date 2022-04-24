@@ -81,6 +81,7 @@ export class AppComponent {
     this.updateController(index)
       .then((data: any) => {
         this.status = "Updated";
+        this.loadUsers();
       })
   }
 
