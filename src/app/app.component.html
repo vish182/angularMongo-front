@@ -1,0 +1,12 @@
+<div style="display: flex; flex-direction: row; justify-content: center;">
+  <div>
+    <h1>{{  title }}</h1>
+    <h1>{{  status }}</h1>
+    <div><span>Username: </span> <input [(ngModel)]="username" type="text" placeholder="Username" required></div>
+    <div><span>Password: </span><input [(ngModel)]="password" type="password" placeholder="Password" required></div>
+    <button type="submit" (click) = "add()">Register</button>
+    <button type="submit" (click) = "check()">Login</button>
+    <button type="submit" (click) = "updatePassword()">updatePassword</button>
+  </div>
+</div>
+<app-profile [users] = "users" [passwords] = "passwords" [deleteFunc] = "deleteFunc"></app-profile>
