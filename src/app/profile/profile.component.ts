@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Profile } from '../Profile';
 
 @Component({
   selector: 'app-profile',
@@ -6,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  @Input() users: String[];
-  @Input() passwords: String[];
+  @Input() users: Profile[];
   @Input() deleteFunc: Function;
   constructor() { }
 

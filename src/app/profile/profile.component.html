@@ -1,7 +1,7 @@
 <!-- <h1 *ngFor="let user of users">{{ user }}</h1> -->
 <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 20px;">
     <div *ngFor="let user of users">
-        <span>{{ user }}</span>
+        <span>{{ user.name }}</span>
         <span><button type="button" (click) = "deleteFunc(user)">Delete</button></span>
     </div>
 </div>
